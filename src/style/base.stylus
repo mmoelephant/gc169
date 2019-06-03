@@ -1,0 +1,240 @@
+@import './color.stylus'
+@import '../assets/font/font.css'
+
+html,body,h1,h2,h3,h4,h5,h6,p,ul,li,input 
+    margin 0
+    padding 0
+    font-family MicrosoftYaHei
+
+html,body 
+    height 100%
+ul,li 
+    list-style none
+a 
+    text-decoration: none
+
+
+.reportBtns
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	justify-content flex-start
+	padding-top 30px
+	// position absolute
+
+.btnClass 
+	width 240px
+	height 38px
+	background-color #ffffff
+	padding-left 30px
+	border-radius 8px
+	box-sizing border-box
+	box-shadow 0px 8px 14px 0px rgba(33,58,233,0.05)
+	margin-left 20px
+	font-size 16px
+	color rgba(44,45,51,1)
+	line-height 38px
+	position relative
+	cursor pointer
+	transition background-color 0.1s
+
+.btnClass:hover 
+	background-color rgba(226,230,255,1)
+
+.dotClass 
+	width 6px
+	height 6px
+	border-radius 8px
+	background-color #7F94FF
+	position: absolute
+	left 18px
+	top 16px
+
+.navigiOn
+	color #454EFF !important
+
+.viewToggle
+	padding-top 3px
+	margin-left 40px
+	font-size 12px
+	color #8E9099
+	line-height 32px
+	text-align center
+
+.view1
+	display inline-block
+	width 80px
+	height 32px
+	border 1px #D6D9E2 solid
+	border-radius 4px 0px 0px 4px
+.view1:hover
+	background-color #eee
+
+.view2
+	display inline-block
+	width 80px
+	height 32px
+	border 1px #D6D9E2 solid
+	border-radius 0px 4px 4px 0px
+
+.view2:hover
+	background-color #f1f1f1
+
+.viewActive
+	border none
+	background-color #7F94FF
+	color #ffffff
+
+.viewActive:hover
+	background-color #91a3ff
+
+.goBackBtn
+	width calc(100% - 258px)
+	margin-left 20px
+	font-size 16px
+	color rgba(69,78,255,1)
+	text-decoration underline
+	line-height 38px
+	transition color 0.1s
+
+.goBackBtn:hover
+	color #8FA1FF
+
+.filterSection
+	width 100%
+	padding 0 20px
+	box-sizing border-box
+	margin-top 20px
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	justify-content flex-start
+
+.filterPart
+	width 100%
+	height 48px
+	background-color #ffffff
+	padding-left 32px
+	box-shadow 0px 8px 14px 0px rgba(33,58,233,0.05)
+	border-radius 8px
+	font-size 16px
+	color #7F94FF
+	line-height 48px
+	position relative
+
+.verticalBar
+	width 4px
+	height 22px
+	background-color rgba(127,148,255,1)
+	position absolute
+	left 20px
+	top 12px
+
+.decoText
+	position absolute
+	right 20px
+	top 0
+	font-size 12px
+	color #C6C9D6
+
+.dataList
+	width 184px
+	height 48px
+	background rgba(255,255,255,1)
+	padding-left 32px
+	box-shadow 0px 8px 14px 0px rgba(33,58,233,0.05)
+	border-radius 8px
+	box-sizing border-box
+	margin-right 10px
+	font-size 16px
+	color rgba(127,148,255,1)
+	line-height 48px
+	position relative
+
+.adData
+	width 48px
+	height 48px
+	background rgba(254,155,120,1)
+	border 1px solid rgba(245,131,86,1)
+	box-shadow 0px 8px 14px 0px rgba(33,58,233,0.05)
+	border-radius 8px
+	margin-right 20px
+	color white
+	line-height 48px
+	text-align center
+	transition background 0.5s
+
+.adData:hover
+	background #FFB499
+
+.adData i 
+	font-size 20px
+.xzBtn
+	margin-left 10px
+	margin-right 0 !important
+.dyBtn
+	background #78A4FE
+	border 1px solid rgba(79,115,247,1)
+	margin-left 10px
+	margin-right 0 !important
+	transition background 0.5s	
+
+.dyBtn:hover
+	background #8db2fe
+
+.is-current>.el-tree-node__content, .is-current>.el-tree-node__content *
+    background tag-color !important
+    color #fff !important
+
+.el-tree-node__content
+	height 28px
+	padding 0 13px!important
+    
+	
+.el-tree-node__content:hover 
+    background-color #B7BFFF !important
+    color #fff
+.el-tree-node__content:hover > *
+    background-color #B7BFFF !important
+    color #fff
+
+.el-icon-caret-right
+    font-family iconfont !important
+
+.el-icon-caret-right:before
+    content: "\e620"
+.el-tree-node__children .el-icon-caret-right:before
+    content: ""
+
+.el-tree-node__expand-icon
+    color #637CFB !important
+.el-tree-node__label
+	color #2C2D33
+.ba 
+	width 965px
+	font-size 12px
+	font-family MicrosoftYaHei
+	font-weight 400
+	color #666
+	text-align center
+	margin 30px auto 0 auto
+.ba+.ba 
+	color #999
+	margin 10px auto 20px auto
+
+.el-loading-mask
+    background-color rgba(0,0,0,0) !important
+	.el-loading-spinner
+		width 80px
+		height 80px
+		line-height 80px
+		background rgba(0,0,0,.75)
+		left 50%
+		margin-left -40px
+		border-radius 10px
+		padding-top 15px
+		box-sizing border-box
+.el-dialog__body
+    padding 0 !important
+.el-checkbox__label
+	display none !important
